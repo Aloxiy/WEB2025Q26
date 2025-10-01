@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+body {
+  font-family: "Caesar Dressing", system-ui;
+  font-weight: 400;
+}
+
+header {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.logo {
+  font-size: 96px;
+  text-align: center;
+  margin: 0; 
+}
+
+header img.cart {
+  position: absolute;
+  top: 30%;   
+  right: 20px; 
+  max-width: 86px;
+  max-height: 52px;
+}
+
+
+h1.name {
+  font-size: 40px;
+  padding-bottom: 0px;
+  max-width: 263px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.woman {
+  max-width: 263px;
+  max-height: 429px;
+  padding-bottom: 5px;
+}
+
+
+div.product {
+  text-align: center;
+  max-height: 500px;
+}
