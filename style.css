@@ -42,6 +42,11 @@ header img.cart {
 }
 
 
+a {
+  text-decoration: none;
+}
+
+
 h1.name {
   font-size: 40px;
   padding-bottom: 0px;
@@ -63,4 +68,81 @@ img.woman {
 div.product {
   text-align: center;
   max-height: 500px;
+}
+
+.listProduct{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 10px;
+}
+
+.iconCart{
+  cursor: pointer;
+  border-width: 0px;
+}
+
+@media (max-width: 1024px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
+
+@media (max-width: 650px) {
+    .container {
+      max-width: 560px;
+    }
+    h1.logo {
+        font-size: 76px;
+    }
+    h1.name {
+        font-size: 28px;
+    }
+    img.woman {
+        max-width: 131px;
+        max-height: 215px;
+        padding-bottom: 5px;
+    }
+  }
+
+@media (max-width: 500px) {
+    h1.logo {
+        text-align: left;
+    }
+    header{
+        justify-content: left;
+        padding-left: 40px;
+    }
+    
+  }
+
+
+.listProduct .product button {
+  background-color: white;
+  font-size: 32px;
+  font-family: "Caesar Dressing";
+  bottom: 25%;
+  width: 216px;
+  height: 60px;
+  position: relative;
+  box-shadow: 0 2px 4px #000;
+  cursor: pointer;
+  transform: translateX(0%) translateY(0px);  
+  opacity: 0;
+}
+
+.listProduct .product button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.listProduct .product:hover button{
+    
+    transition: 0.5s;
+    opacity: 1;
+    transform: translate(0%, -50px);
+    
+    
 }
