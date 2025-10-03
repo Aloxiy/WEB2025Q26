@@ -115,7 +115,7 @@ function goToCheckout() {
         return;
     }
     
-    window.location.href = '/html/order.html';
+    window.location.href = 'html/order.html';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -126,5 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     updateCounter();
 });
+
 
 updateCounter();
