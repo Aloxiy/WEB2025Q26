@@ -10,42 +10,85 @@
     <main class="container">
     <header>
       <h1 class="logo">GALATEA</h1>
-      <button class="iconCart">
+      <button class="iconCart" onclick="toggleCart()">
         <img class="cart" src="images/cart.svg">
+        <span class="counter">0</span>
       </button>
     </header>
+    
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Your Cart</h2>
+          <span class="close" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+        </div>
+        <div class="cart-total">
+          <div class="total-price">Total: $<span id="totalPrice">0</span></div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
     <section class="listProduct">
       <div class="product">
-        <img class="woman" src="images/1.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(1)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/1.png">
+          <button onclick="addCart(1, 'MARIA', 1200)">add to cart</button>
+        </div>
+        <h1 class="name">MARIA - 1200$</h1>
       </div>
       <div class="product">
-        <img class="woman" src="images/2.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(2)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/2.png">
+          <button onclick="addCart(2, 'SUE', 1100)">add to cart</button>
+        </div>
+        <h1 class="name">SUE - 1100$</h1>
       </div>
       <div class="product">
-        <img class="woman" src="images/3.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(3)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/3.png">
+          <button onclick="addCart(3, 'CATE', 2000)">add to cart</button>
+        </div>
+        <h1 class="name">CATE - 2000$</h1>
       </div>
       <div class="product">
-        <img class="woman" src="images/4.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(4)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/4.png">
+          <button onclick="addCart(4, 'AIKO', 1800)">add to cart</button>
+        </div>
+        <h1 class="name">AIKO - 1800$</h1>
       </div>
       <div class="product">
-        <img class="woman" src="images/5.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(5)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/5.png">
+          <button onclick="addCart(5, 'ANGELIKA', 1600)">add to cart</button>
+        </div>
+        <h1 class="name">ANGELIKA - 1600$</h1>
       </div>
       <div class="product">
-        <img class="woman" src="images/6.png">
-        <h1 class="name">EGYPET - 1000$</h1>
-        <button onclick="addCart(6)">add to cart</button>
+        <div class="img_h">
+          <img class="woman" src="images/6.png">
+          <button onclick="addCart(6, 'VERONIKA', 800)">add to cart</button>
+        </div>
+        <h1 class="name">VERONIKA - 800$</h1>
       </div>
     </section>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h3>The Story of Galatea</h3>
+        <p>
+          Galatea takes its name from the ancient Greek myth of Pygmalion, a sculptor who created 
+          a beautiful ivory statue of a woman so perfect that he fell in love with his own creation. 
+          He prayed to the goddess Aphrodite to bring his sculpture to life. Touched by his devotion, 
+          Aphrodite granted his wish and transformed the statue into a living woman named Galatea, 
+          which means "she who is milk-white." Like Pygmalion breathing life into stone, our brand 
+          transforms artistic vision into living beauty through our creations.
+        </p>
+      </div>
+    </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
