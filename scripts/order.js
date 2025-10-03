@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         localStorage.removeItem('cart');
         
-        window.location.href = '../index.html';
+        const rootPath = window.location.pathname.split('/html/')[0];
+        window.location.href = rootPath + '/';
     });
     
     renderOrderItems();
