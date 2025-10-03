@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         localStorage.removeItem('cart');
         
-        const rootPath = window.location.pathname.split('/html/')[0];
-        window.location.href = rootPath + '/';
+
+        window.location.href = 'https://aloxiy.github.io/WEB2025Q26/';
     });
     
     renderOrderItems();
